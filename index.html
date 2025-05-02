@@ -3,42 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>style.css</style>
+    <title>Johan Beker - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
-<body>
-    <section id="first-section" class="section-grid">
-        <div id="profile-box" class="box">
-          <div class="titles">
-            <h1 class="title profiles">"Nama Lengkap"</h1>      
-            <h2 class="title-2 profiles">Junior Web Developer</h2>
-            <img src="./Assets/my-photo.png" alt="my-picture">
-          </div>
-          <div id="welcome-box" class="box">
-            <div class="hello">
-              <h2>Hai</h2> <img style="margin-left: 2vw; max-width: 7vw;" src="./Assets/hand-wave.png" alt="">
+<body class="bg-black text-white min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Navigation -->
+        <nav class="py-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-gray-800 rounded-full p-1">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 0a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"></path>
+                        <path d="M10 4a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z"></path>
+                    </svg>
+                </div>
+                <span class="ml-2 font-bold">PORTOFOLIO</span>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing, elit. Aspernatur obcaecati veritatis excepturi alias sapiente eveniet exercitationem impedit eos velit magni.
-            </p>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-400 hover:text-white">Projects</a>
+                <a href="contact.html" class="text-gray-400 hover:text-white">Contact</a>
+            </div>
+
+            <div>
+                <a href="contact.html" class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full flex items-center">
+                    <span class="mr-2">Contact me</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="py-12 md:py-20">
+          <div class="inline-block px-6 py-2 bg-gray-900 rounded-full mb-1 text-gray-100">
+              <span class="mr-2">•</span>DATA DIRI
           </div>
-          <div id="social-box" class="box">
-            <a href="" class="grow-hover"><i class="fab fa-linkedin-in"></i></a>
-            <a href="" class="grow-hover"><i class="fab fa-instagram"></i></a>
-            <a href="" class="grow-hover"><i class="far fa-envelope"></i></a>
-            <a href="" class="grow-hover"><i class="fab fa-github"></i></a>
-          </div>
+          
+          <div class="flex flex-col md:flex-row justify-between">
+              <div class="md:w-1/2">
+                  <h1 class="text-5xl md:text-6xl text-gray-400 mb-6 mt-6">M.
+                       <span class="text-white font-bold">Alfandrew</span> <span class="text-gray-400">.F</span>
+                      <svg class="inline-block w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                  </h1>
+                    
+                    <p class="text-gray-400 mb-8 max-w-lg">
+                       KETERANGAN DIRI
+                    </p>
+                    
+                    <div class="flex space-x-4 mb-8">
+                        <a href="#" class="border border-gray-600 hover:border-white text-white px-6 py-2 rounded-full">
+                            See All Projects
+                        </a>
+                        <a href="contact.html" class="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200">
+                            Contact Now
+                        </a>
+                    </div>
+                </div>
+                  
+                </div>
+            </div>
         </div>
-      </section>
-      <footer class="section-grid">
-        <h4>"Nama Lengkap"</h4>
-        <div class="social-boxes">
-          <a href=""><i class="fab fa-linkedin-in"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-facebook-f"></i></a>
-          <a href=""><i class="fab fa-tiktok"></i></a>
+
+        <!-- Projects Section -->
+        <div class="py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-900 rounded-xl overflow-hidden">
+                    <img src="/api/placeholder/640/320" alt="Social Media Growth Dashboard" class="w-full h-auto" />
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Social Media Growth Made Easy</h3>
+                        <p class="text-gray-400 mb-4">Dashboard UI for managing social media campaigns and analytics</p>
+                        <div class="flex space-x-4 text-sm text-gray-500">
+                            <span>UI Design</span>
+                            <span class="border-l border-gray-600 pl-4">Dashboard</span>
+                            <span class="border-l border-gray-600 pl-4">2023</span>
+                            <span class="border-l border-gray-600 pl-4">Details</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-900 rounded-xl overflow-hidden">
+                    <img src="/api/placeholder/640/320" alt="Dark mode website" class="w-full h-auto" />
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-gray-900 rounded-xl overflow-hidden">
+                    <div class="relative">
+                        <img src="/api/placeholder/640/320" alt="Designer portfolio" class="w-full h-auto" />
+                        <div class="absolute top-4 left-4">
+                            <div class="bg-black bg-opacity-50 px-3 py-1 rounded-full text-sm">
+                                Beker Designer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card bg-gray-900 rounded-xl overflow-hidden">
+                    <div class="relative">
+                        <img src="/api/placeholder/640/320" alt="Unleash Your Full Potential" class="w-full h-auto" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="mb-4">
+                                    <svg class="mx-auto w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 0a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"></path>
+                                        <path d="M10 4a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-3xl font-bold mb-2">Unleash Your Full Potential</h3>
+                                <p class="text-gray-300">with Jin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>Final Project FE GDGOC UIN JKT</p>
-      </footer>
+        
+        <!-- Scroll indicator -->
+        <div class="py-8 flex justify-center">
+            <a href="#" class="animate-bounce">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
