@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie - Creative Director Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .tool-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 0.75rem;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+    <div class="max-w-6xl mx-auto">
+        <!-- Top Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <!-- Left Card: Who I Am -->
+            <div class="card p-6 md:p-8">
+                <h1 class="text-3xl font-bold mb-4">Tentang Saya</h1>
+                <p class="mb-4">Muhammad Alfandrew Fisabilillah</p>
+                <p>Saya adalah lulusan SMK Jurusan Multimedia, memiliki
+                    keterampilan dan pengetahuan yang solid dalam bidang
+                    multimedia. Selama masa pendidikan, saya telah
+                    mengembangkan kemampuan dalam desain grafis, video
+                    editor, kamera dan kompetensi multimedia lainnya.</p>
+            </div>
+            
+            <!-- Right: Photo -->
+            <div class="card p-0 overflow-hidden">
+                <img src="nyoba.jpg" alt="Sophie with camera" class="w-full h-full object-cover"/>
+            </div>
+        </div>
+        
+        <!-- My Toolkit Section -->
+        <div class="mt-8">
+            <h2 class="text-3xl font-bold mb-4">Software yang digunakan:</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <p class="text-lg">..................</p>
+            </div>
+            
+            <!-- Tools Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Adobe Illustrator -->
+                <div class="tool-card p-4 flex items-center">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4">
+                        <span class="text-orange-600 text-2xl font-bold">Ai</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Adobe Illustrator</h3>
+                        <p class="text-sm text-gray-200">Vector graphics design.</p>
+                    </div>
+                </div>
+                
+                <!-- After Effects -->
+                <div class="tool-card p-4 flex items-center">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4">
+                        <span class="text-purple-600 text-2xl font-bold">Ae</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">After Effects</h3>
+                        <p class="text-sm text-gray-200">Motion graphics & VFX.</p>
+                    </div>
+                </div>
+                
+                <!-- Adobe Premiere -->
+                <div class="tool-card p-4 flex items-center">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4">
+                        <span class="text-blue-800 text-2xl font-bold">Pr</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Adobe Premiere</h3>
+                        <p class="text-sm text-gray-200">Video editing.</p>
+                    </div>
+                </div>
+                
+                <!-- Photoshop -->
+                <div class="tool-card p-4 flex items-center">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4">
+                        <span class="text-blue-600 text-2xl font-bold">Ps</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Photoshop</h3>
+                        <p class="text-sm text-gray-200">Image editing.</p>
+                    </div>
+                </div>
+                
+                <!-- Figma -->
+                <div class="tool-card p-4 flex items-center">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4">
+                        <span class="text-green-500 text-2xl font-bold">F</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Figma</h3>
+                        <p class="text-sm text-gray-200">UI/UX design.</p>
+                    </div>
+                </div>
+                
+                <!-- Blender 3D -->
+                <div class="tool-card p-4 flex items-center">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4">
+                        <span class="text-orange-500 text-2xl font-bold">B</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Blender 3D</h3>
+                        <p class="text-sm text-gray-200">3D modeling & animation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
