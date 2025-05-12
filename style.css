@@ -50,20 +50,20 @@ a:hover {
   color: #343434;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url('Besok\ oagi.jpg');
+  background-image: url('./foto/Besok\ oagi.jpg');
   animation: border-transform 6s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     animation-play-state: paused;
 }
 .checkbox.scnd + label{
-  background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
+  background-image: url('./foto/social\ media\ thumb.png');
 }
 .checkbox.thrd + label{
-  background-image: url('sertif\ pkl.png');
+  background-image: url('./foto/pkl\ 1.jpeg');
 }
 .checkbox.foth + label{
-  background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+  background-image: url('./foto/sertif\ pkl.png');
 }
 
 .checkbox:checked + label{
@@ -91,7 +91,7 @@ ul {
   position: absolute;
   top: 0;
   right: 0;
-  display: block;
+  display: flexbox;
   width: 100%;
   z-index: 100;
   padding: 0;
@@ -112,7 +112,7 @@ ul li {
   border: 5px solid #bdc3c7;
   background-size: cover;
   background-position: center;
-  background-image: url('Besok\ oagi.jpg');
+  background-image: url('./foto/Besok\ oagi.jpg');
   border-radius: 50%;
   box-sizing: border-box;
   letter-spacing: 2px;
@@ -129,13 +129,13 @@ ul li span {
   mix-blend-mode: difference;
 }
 ul li:nth-child(2) {
-  background-image: url('social\ media\ thumb.png');
+  background-image: url('./foto/social\ media\ thumb.png');
 }
 ul li:nth-child(3) {
-  background-image: url('sertif\ pkl.png');
+  background-image: url('./foto/pkl\ 1.jpeg');
 }
 ul li:nth-child(4) {
-  background-image: url('social\ media\ thumb.png');
+  background-image: url('./foto/sertif\ pkl.png');
 }
 
 
