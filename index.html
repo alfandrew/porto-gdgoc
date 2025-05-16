@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfandrew - Portfolio</title>
+    <title>Alfandrew Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <style>
@@ -79,7 +79,7 @@
                         <a href="project.html" class="border border-gray-600 hover:border-white text-white px-6 py-2 rounded-full">
                             See All Projects
                         </a>
-                        <a href="CV Alfandrew.pdf" target="_blank" rel="noopener noreferrer" class="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200">
+                        <a href="/foto/CV Alfandrew.pdf" target="_blank" rel="noopener noreferrer" class="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200">
                             Download CV
                         </a>
                     </div>
@@ -207,6 +207,33 @@
             </div>
         </div>
     </div>
+    <!-- ................................................................................................................................. -->
+     <div class="bg-black flex items-center justify-center min-h-screen">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-6xl w-full px-4">
+        <!-- Panel Kiri - Kutipan -->
+        <div class="bg-purple-900 font-bold text-white p-12 rounded-lg flex flex-col justify-center relative">
+            <div id="quote-box" class="box text-4xl text-white">
+                <p id="quote-text">Loading...</p>
+                <p id="quote-author"></p>
+                </div>
+        </div>
+        
+        <!-- Panel Kanan - Form Kontak -->
+        <div class="bg-purple-900 text-white p-12 rounded-lg flex flex-col">
+            <div id="contact-box" class="box">
+            <h3 class="text-2xl">Interested in collaborating or hiring?<br>Feel free to contact me!</h3>
+            <form class="contact-form text-black" id="emailForm" >
+                <textarea name="message" id="message" class="w-full p-4 rounded-lg mb-6 h-40" placeholder="Write here!" required></textarea>
+                <button type="submit" class="bg-white text-indigo-800 px-6 py-2 rounded-full font-semibold w-24 hover:bg-indigo-100 transition-colors">Send It!</button>
+            </form>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    
+<!-- ............................................................................................................................................... -->
     <!-- Scroll indicator -->
         <div class="py-8 flex justify-center">
             <a href="#" class="animate-bounce">

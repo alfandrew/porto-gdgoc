@@ -1,10 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    const slider = document.querySelector('.slider');
-    const slides = document.querySelectorAll('.slide');
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    const dots = document.querySelectorAll('.dot');
     let currentIndex = 0;
     const quoteText = document.getElementById('quote-text');
     const quoteAuthor = document.getElementById('quote-author');
