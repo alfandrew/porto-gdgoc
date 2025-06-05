@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-color: black;
-            color: white;
             font-family: 'Inter', sans-serif;
         }
         .card {
@@ -26,159 +24,173 @@
         }
     </style>
 </head>
-<body class="min-h-screen p-4 md:p-8">
-    <div class="max-w-6xl mx-auto">
-        <!-- Top Section -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <!-- Left Card: Who I Am -->
-            <div class="card p-6 md:p-8">
-                <h1 class="text-3xl font-bold mb-4">Tentang Saya</h1>
-                <p class="mb-4">Muhammad Alfandrew Fisabilillah</p>
-                <p>Saya adalah lulusan SMK Jurusan Multimedia, memiliki
-                    keterampilan dan pengetahuan yang solid dalam bidang
-                    multimedia. Selama masa pendidikan, saya telah
-                    mengembangkan kemampuan dalam desain grafis, video
-                    editor, kamera dan kompetensi multimedia lainnya.</p>
+<body class="bg-white text-black">
+   
+    <!-- Navigation -->
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="py-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-gray-800 rounded-full p-1">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 0a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"></path>
+                        <path d="M10 4a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z"></path>
+                    </svg>
+                </div>
+                <span class="ml-2 font-bold">PORTOFOLIO</span>
             </div>
+
+            <div class="hidden md:flex justify-center space-x-8">
+                <a href="index.html" class="font-bold hover:text-blue-500">Home</a>
+                <a href="about.html" class="bg-blue-300 px-2 rounded-full font-bold hover:text-blue-500">About</a>
+                <a href="project.html" class="font-bold hover:text-blue-500">Projects</a>
+            </div>
+        </nav>
+        </div>
+        
+    <div  class="min-h-screen p-4 md:p-8">
+    <div class="max-w-6xl mx-auto justify-center">
+    <!-- Top Section -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 border-2 border-orange-300 rounded-3xl p-4 sm:p-6 lg:p-8 bg-white shadow-2xl">
+                            <!-- Left Card: Who I Am -->
+                            <div class="bg-white ">
+                        <!-- Main content -->
+                        <div class="space-y-6">
+                            <!-- Title section -->
+                            <div class="space-y-4 text-center">
+                                <h1 class="text-blue-500 text-4xl md:text-5xl font-bold">
+                                    <span>M.Alfandrew.F</span>
+                                </h1>
+                                
+                                <!-- Web Developer badge -->
+                                <div class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 w-300 h-18 rounded text-white px-8 py-4  justify-center  text-2xl font-bold shadow-lg">
+                                    Creative Digital
+                                </div>
+                            </div>
+                            
+                            <!-- Description -->
+                            <p class="text-justify text-lg leading-relaxed max-w-xl mt-24">
+                                Saya adalah mahasiswa jurusan Sistem Informasi dari Universitas UIN Syarif Hidayatullah Jakarta, 
+                                dan juga lulusan SMKN 04 Tangerang Selatan dengan Jurusan Multimedia, saya memiliki
+                                keterampilan dan pengetahuan yang solid dalam bidang
+                                multimedia. Selama masa pendidikan, saya telah
+                                mengembangkan kemampuan dalam desain grafis, video
+                                editor, kamera, objek 3d dan kompetensi multimedia lainnya
+                            </p>
+                        </div>
+                    </div>
             
             <!-- Right: Photo -->
-            <div class="card p-0 overflow-hidden">
+            <div class="card p-0 rounded-3xl overflow-hidden hover:border-orange-300 hover:-translate-y-1 transform transition-all duration-300 ease-in-out cursor-pointer ">
                 <img src="./foto/foto sendiri.jpeg" alt="Sophie with camera" class="w-full h-full object-cover"/>
             </div>
         </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
         
         <!-- My Toolkit Section -->
-        <div class="mt-8">
-            <h2 class="text-3xl font-bold mb-4">Software yang digunakan:</h2>
+        <div class="mt-32">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold mb-2">
+                    <span class="bg-yellow-400 text-white px-4 py-2 rounded">Software</span> 
+                    <span class="text-blue-600">Yang Digunakan</span>
+                </h1>
+            </div>
             
-            <!-- Tools Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class=" bg-grey-500 p-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Container dengan border orange -->
+        <div class="border-2 border-orange-300 rounded-3xl p-4 sm:p-6 lg:p-8 bg-white shadow-2xl">
+            <!-- Grid responsif -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
+                
                 <!-- Adobe Illustrator -->
-                <div class="tool-card p-4 flex items-center">
-                    <div class="w-12 h-12  rounded-lg flex items-center justify-center mr-4">
-                        <image src="./foto/Adobe Illustrator CC Icon.png">
-                    </div>
-                    <div>
-                        <h3 class="font-bold">Adobe Illustrator</h3>
-                        <p class="text-sm text-gray-200">Vector graphics design.</p>
+                <div class="group bg-white border border-gray-200 rounded-xl p-3 sm:p-4 lg:p-6 hover:shadow-xl hover:border-orange-300 hover:-translate-y-1 transform transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex items-center space-x-2 sm:space-x-3">
+                        <div class="w-6 h-6 sm:w-8 sm:h-8  rounded flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                             <image src="./foto/Adobe Illustrator CC Icon.png">
+                        </div>
+                        <span class="text-gray-700 font-medium text-sm sm:text-lg group-hover:text-orange-600 transition-colors duration-300">illustrator</span>
                     </div>
                 </div>
-                
+
                 <!-- After Effects -->
-                <div class="tool-card p-4 flex items-center">
-                    <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4">
-                        <image src="./foto/Adobe After Effects.png"></image>
-                    </div>
-                    <div>
-                        <h3 class="font-bold">After Effects</h3>
-                        <p class="text-sm text-gray-200">Motion graphics & VFX.</p>
+                <div class="group bg-white border border-gray-200 rounded-xl p-3 sm:p-4 lg:p-6 hover:shadow-xl hover:border-purple-300 hover:-translate-y-1 transform transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex items-center space-x-2 sm:space-x-3">
+                        <div class="w-6 h-6 sm:w-8 sm:h-8 rounded flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <image src="./foto/Adobe After Effects.png"></image>
+                        </div>
+                        <span class="text-gray-700 font-medium text-sm sm:text-lg group-hover:text-purple-600 transition-colors duration-300">After Effect</span>
                     </div>
                 </div>
-                
+
                 <!-- Adobe Premiere -->
-                <div class="tool-card p-4 flex items-center">
-                    <div class="w-12 h-12  rounded-lg flex items-center justify-center mr-4">
-                        <image src="./foto/premier.png"></image>
-                    </div>
-                    <div>
-                        <h3 class="font-bold">Adobe Premiere</h3>
-                        <p class="text-sm text-gray-200">Video editing.</p>
+                <div class="group bg-white border border-gray-200 rounded-xl p-3 sm:p-4 lg:p-6 hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transform transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex items-center space-x-2 sm:space-x-3">
+                        <div class="w-6 h-6 sm:w-8 sm:h-8 rounded flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <image src="./foto/premier.png"></image>
+                        </div>
+                        <span class="text-gray-700 font-medium text-sm sm:text-lg group-hover:text-blue-600 transition-colors duration-300">Premier</span>
                     </div>
                 </div>
-                
-                <!-- visual code -->
-                <div class="tool-card p-4 flex items-center">
-                    <div class="w-12 h-12  rounded-lg flex items-center justify-center mr-4">
-                        <image src="./foto/Visual Studio Code.png"></image>
-                    </div>
-                    <div>
-                        <h3 class="font-bold">Visual Code</h3>
-                        <p class="text-sm text-gray-200">Coding.</p>
+
+                <!-- Visual Code -->
+                <div class="group bg-white border border-gray-200 rounded-xl p-3 sm:p-4 lg:p-6 hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transform transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex items-center space-x-2 sm:space-x-3">
+                        <div class="w-6 h-6 sm:w-8 sm:h-8 rounded flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <image src="./foto/Visual Studio Code.png"></image>
+                        </div>
+                        <span class="text-gray-700 font-medium text-sm sm:text-lg group-hover:text-blue-600 transition-colors duration-300">Visual Code</span>
                     </div>
                 </div>
 
                 <!-- Photoshop -->
-                <div class="tool-card p-4 flex items-center">
-                    <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4">
-                        <image src="./foto/Adobe Photoshop CC Rounded.png"></image>
-                    </div>
-                    <div>
-                        <h3 class="font-bold">Photoshop</h3>
-                        <p class="text-sm text-gray-200">Image editing.</p>
-                    </div>
-                </div>
-                
-                <!-- Figma -->
-                <div class="tool-card p-4 flex items-center">
-                    <div class="w-12 h-12  rounded-lg flex items-center justify-center mr-4">
-                        <image src="./foto/Figma.png"></image>
-                    </div>
-                    <div>
-                        <h3 class="font-bold">Figma</h3>
-                        <p class="text-sm text-gray-200">UI/UX design.</p>
-                    </div>
-                </div>
-                
-                <!-- Blender 3D -->
-                <div class="tool-card p-4 flex items-center">
-                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4">
-                        <image src="./foto/Blender Icon.png"></image>
-                    </div>
-                    <div>
-                        <h3 class="font-bold">Blender 3D</h3>
-                        <p class="text-sm text-gray-200">3D modeling & animation.</p>
-                    </div>
-                </div>
-
-                <!-- LightRoom -->
-                <div class="tool-card p-4 flex items-center">
-                    <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4">
-                        <image src="./foto/Adobe Lightroom CC.png"></image>
-                    </div>
-                    <div>
-                        <h3 class="font-bold">LightRoom</h3>
-                        <p class="text-sm text-gray-200">Color Grading.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Pengalaman Magang -->
-        <div class="section full-height over-hide px-4 px-sm-0">
-            <div class="container">
-                <div class="row full-height justify-content-center">
-                    <div class="col-lg-10 col-xl-8 align-self-center padding-tb">
-                        <div class="section mx-auto text-center slider-height-padding">
-                              <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked/>
-                              <label for="slide-1"></label>
-                              <input class="checkbox scnd" type="radio" name="slider" id="slider-2"/>
-                              <label for="slider-2"></label>
-                              <input class="checkbox thrd" type="radio" name="slider" id="slider-3"/>
-                              <label for="slider-3"></label>
-                              <input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
-                              <label for="slider-4"></label>
-                            <ul>
-                                <li>
-                                    <span>Podcast</span>
-                                </li>
-                                <li>
-                                    <span>TOY PIG</span>
-                                </li>
-                                <li>
-                                    <span>Sertifikat</span>
-                                </li>
-                                <li>
-                                    <span>SKATEBOARD FACE</span>
-                                </li>
-                            </ul>
+                <div class="group bg-white border border-gray-200 rounded-xl p-3 sm:p-4 lg:p-6 hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transform transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex items-center space-x-2 sm:space-x-3">
+                        <div class="w-6 h-6 sm:w-8 sm:h-8 rounded flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <image src="./foto/Adobe Photoshop CC Rounded.png"></image>
                         </div>
+                        <span class="text-gray-700 font-medium text-sm sm:text-lg group-hover:text-blue-600 transition-colors duration-300">Photoshop</span>
                     </div>
-                  </div>
+                </div>
+
+                <!-- Figma -->
+                <div class="group bg-white border border-gray-200 rounded-xl p-3 sm:p-4 lg:p-6 hover:shadow-xl hover:border-red-300 hover:-translate-y-1 transform transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex items-center space-x-2 sm:space-x-3">
+                        <div class="w-6 h-6 sm:w-8 sm:h-8 rounded flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <image src="./foto/Figma.png"></image>
+                        </div>
+                        <span class="text-gray-700 font-medium text-sm sm:text-lg group-hover:text-red-600 transition-colors duration-300">Figma</span>
+                    </div>
+                </div>
+
+                <!-- Blender 3D -->
+                <div class="group bg-white border border-gray-200 rounded-xl p-3 sm:p-4 lg:p-6 hover:shadow-xl hover:border-orange-300 hover:-translate-y-1 transform transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex items-center space-x-2 sm:space-x-3">
+                        <div class="w-6 h-6 sm:w-8 sm:h-8 rounded flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <image src="./foto/Blender Icon.png"></image>
+                        </div>
+                        <span class="text-gray-700 font-medium text-sm sm:text-lg group-hover:text-orange-600 transition-colors duration-300">Blender</span>
+                    </div>
+                </div>
+
+                <!-- Light Room -->
+                <div class="group bg-white border border-gray-200 rounded-xl p-3 sm:p-4 lg:p-6 hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transform transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex items-center space-x-2 sm:space-x-3">
+                        <div class="w-6 h-6 sm:w-8 sm:h-8 rounded flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <image src="./foto/Adobe Lightroom CC.png"></image>
+                        </div>
+                        <span class="text-gray-700 font-medium text-sm sm:text-lg group-hover:text-blue-600 transition-colors duration-300">Light Room</span>
+                    </div>
+                </div>
+
+                </div>
             </div>
         </div>
+    </div>
+    </div>
 
-
-    </div>  
+ </div>  
+ </div>
     
     <!-- Scroll indicator -->
         <div class="py-8 flex justify-center">
